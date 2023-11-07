@@ -1,0 +1,28 @@
+/* Clients.css */
+
+.clients {
+  padding: 2rem;
+  text-align: center;
+}
+
+.clients h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.client-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.client-item {
+  width: 25%; /* Display 3 items per row */
+  padding: 1rem;
+  text-align: center;
+}
+
+.client-item img {
+  max-width: 100%;
+  height: auto;
+}

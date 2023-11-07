@@ -1,0 +1,29 @@
+.about {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.about-image {
+  flex: 1; /* Place the photo on the left */
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+.about-content {
+  flex: 1; /* Place the text on the right */
+  text-align: left;
+  padding: 0 2rem; /* Add some horizontal spacing between the image and text */
+}
+
+.about h2 {
+  font-size: 1.5rem;
+}
+
+.about p {
+  margin-top: 1rem;
+}

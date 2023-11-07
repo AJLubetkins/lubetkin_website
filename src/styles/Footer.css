@@ -1,0 +1,28 @@
+/* Footer.css */
+
+.footer {
+    margin-top: 1rem;
+  background-color: #333; /* Footer background color */
+  color: #fff; /* Text color */
+  padding: 1rem;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between social icons */
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Style for social media icons (you can add custom icon images) */
+.social-links img {
+  width: 30px; /* Adjust the icon width */
+  height: 30px; /* Adjust the icon height */
+}
+
