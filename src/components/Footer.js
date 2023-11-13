@@ -1,24 +1,22 @@
 import React from 'react';
 import '../styles/Footer.css';
 
-function Footer() {
+import CV from './cv.pdf'
 
-/*
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-          <img src="instagram-icon.png" alt="Instagram" />
-        </a>
-        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-          <img src="twitter-icon.png" alt="Twitter" />
-        </a>
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-          <img src="youtube-icon.png" alt="YouTube" />
-        </a>
-*/
-    
+function Footer() {
   return (
-    <footer className="footer">
+      <footer className="footer">
 	<div className="social-links">
-	    All rights reserved - Alex Lubetkin 
+	    All rights reserved - Alex Lubetkin
+	    <a href="https://www.instagram.com/ajlubetkin/" target="_blank" rel="noopener noreferrer">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png?20200512141346" alt="Instagram" />
+            </a>
+	    <a href="mailto:ajlubetkin@gmail.com">
+		ajlubetkin@gmail.com
+            </a>
+	    <a href={CV} download="Alex Lubetkin - CV.pdf">
+		Download CV
+            </a>
       </div>
     </footer>
   );

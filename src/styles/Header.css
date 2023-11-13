@@ -7,25 +7,18 @@
   width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   z-index: 100; /* Ensure the header stays above other content */
-  color: #fff;
   display: flex;
   justify-content: space-between;
+  color: black;
   align-items: center;
   padding: 1rem;
+  background-color: white;
+  height: 7vh;
 }
 
 /* Style for the active link (optional) */
 .header a.active {
   color: #007bff; /* Active link color */
-}
-
-.header {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
 }
 
 .logo {
@@ -58,5 +51,10 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: black;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: #6f6f6f;
 }

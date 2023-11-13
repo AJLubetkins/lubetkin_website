@@ -1,23 +1,24 @@
 /* Footer.css */
 
+
 .footer {
-    margin-top: 1rem;
-  background-color: #333; /* Footer background color */
+  background-color: navy; /* Footer background color */
   color: #fff; /* Text color */
   padding: 1rem;
   text-align: center;
+  height: 6vh;
 }
 
 .social-links {
   display: flex;
   justify-content: center;
   gap: 20px; /* Adjust the gap between social icons */
+  align-items: center;
 }
 
 .social-links a {
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
 }
 
 /* Style for social media icons (you can add custom icon images) */
@@ -26,3 +27,8 @@
   height: 30px; /* Adjust the icon height */
 }
 
+
+/* Style for the CV link */
+.social-links a:last-child {
+  font-weight: bold; /* Make the CV link bold */
+}

@@ -1,21 +1,20 @@
+// About.js
 import React from 'react';
 import '../styles/About.css';
 
 function About() {
   return (
-    <section className="about" id="about">
-      <div className="about-image">
-        <img src="https://media-lhr6-2.cdn.whatsapp.net/v/t61.24694-24/358327928_340133682023922_8408065025747917670_n.jpg?ccb=11-4&oh=01_AdREOfarjM6Py4POs6aEBE0rLoCywYZiwHM5twT9eCztjg&oe=654E96B8&_nc_sid=e6ed6c&_nc_cat=104" alt="Videographer" />
-      </div>
+    <section className="about">
       <div className="about-content">
+        <h2>Hello!</h2>
+
+          <p><strong>Post-production:</strong> I’ve worked as a professional editor for years now, primarily in digital documentary spaces, and also in some commercial spaces. I use the Adobe suite (Premiere, After Effects, a bit of Photoshop), and also know Avid Media Composer and DaVinci Resolve.</p>
+          <p><strong>Camera work:</strong> I own and operate a Sony FX3 cinema-quapty camera, and have a nice bit of kit to fill it out, including pghts, audio gear, and a gimbal.</p>
+          <p><strong>Researching and writing:</strong> I have spent years working on documentary scripts, and am adept at taking on a load of rushes and finding the story without a paper script.</p>
+          <p><strong>Project management:</strong> Setting up meetings, creating kit psts and shot charts, securing filming locations, etc. The “boring” stuff.</p>
+          <p><strong>Comedy stuff:</strong> (writing/directing/performing sketch, in pve and digital spaces), which may or may not be relevant to the project you’re putting together.</p>
         <p>
-          I am a professional videographer with a passion for capturing moments that last a lifetime.
-        </p>
-        <p>
-          With a bajillion years of experience, I have worked on various projects, including weddings, events, and documentaries.
-        </p>
-        <p>
-            The Golden State Warriors are the greatest basketball team that ever was and ever will be.
+          I am currently freelancing and am always looking to take on new and exciting jobs. Get in touch!
         </p>
       </div>
     </section>

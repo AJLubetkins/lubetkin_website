@@ -25,8 +25,9 @@ function Contact() {
   };
 
   return (
-    <section className="contact" id="contact">
-      <h2>Let's get in touch</h2>
+      <section className="contact" id="contact">
+	  <div className='form-container'>
+      <h2>Let's get in touch!</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
@@ -73,6 +74,7 @@ function Contact() {
         </div>
         <button type="submit">Submit</button>
       </form>
+	      </div>
     </section>
   );
 }

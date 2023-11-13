@@ -10,9 +10,10 @@ function Testimonials() {
 	<Carousel showStatus={false} showThumbs={false} emulateTouch={true} infiniteLoop={true} showArrows={true}>
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className="testimonial">
-            <p className="content">{testimonial.quote}</p>
             <p className="author">{testimonial.name}</p>
-            <p className="position">{testimonial.position}</p>
+              <p className="position">{testimonial.position}</p>
+	      <p className="content">{testimonial.quote}</p>
+
           </div>
         ))}
       </Carousel>

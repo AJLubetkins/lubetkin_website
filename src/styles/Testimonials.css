@@ -3,6 +3,8 @@
 .testimonials {
   padding: 2rem;
   text-align: center;
+  background-color: navy;
+  color: white;
 }
 
 .testimonials h2 {
@@ -11,13 +13,10 @@
 }
 
 .testimonial {
-  max-width: 300px;
+  max-width: 50%;
   padding: 1rem;
   margin: 0 auto; /* Center the testimonials within the carousel */
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
   text-align: center; /* Center text within testimonials */
 }
 
@@ -28,7 +27,17 @@
 }
 
 .testimonial .author {
-  font-weight: bold;
+    font-weight: bold;
+    font-size: 2rem
+}
+
+.testimonial .position {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.testimonial .quote {
+    margin-bottom: 2rem;
 }
 
 /* Styles for the carousel */
@@ -38,8 +47,8 @@
   box-shadow: none; /* Remove default carousel box shadow */
 }
 
-.carousel .control-arrow {
-  display: none; /* Hide the default control arrows */
+.carousel .control-arrow:hover {
+    background-color: navy;
 }
 
 .carousel .slide {

@@ -1,29 +1,37 @@
+/* About.css */
 .about {
+    position: relative;
+    margin-top: 6vh;
+  height: 85vh; /* Adjust the height as needed */
+  background: url('../assets/headshot 1.jpg') center/cover no-repeat; /* Replace with your actual image path */
+  color: white;
   display: flex;
   align-items: center;
-  padding: 2rem;
-}
-
-.about-image {
-  flex: 1; /* Place the photo on the left */
-}
-
-.about-image img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 5px;
+  justify-content: left;
 }
 
 .about-content {
-  flex: 1; /* Place the text on the right */
+  position: absolute;
+  max-width: 50%; /* Adjust the width of the text overlay */
+  padding: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity as needed */
   text-align: left;
-  padding: 0 2rem; /* Add some horizontal spacing between the image and text */
+  margin-left: 10vw;
+  border-radius: 8px;
 }
 
-.about h2 {
-  font-size: 1.5rem;
+.about-content h2 {
+  margin-bottom: 10px;
 }
 
-.about p {
-  margin-top: 1rem;
+.about-content p {
+    font-size: 1.1rem;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .about-content {
+    max-width: 100%;
+  }
 }
