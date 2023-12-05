@@ -2,15 +2,15 @@ import React from 'react';
 import '../styles/Clients.css';
 
 // Assuming the images are located in the 'client_logos' directory
-import Truly from '../assets/client_logos/Truly.webp';
+import Truly from '../assets/client_logos/Truly.png';
 import AlJazeera from '../assets/client_logos/al_jazeera.png';
 import Boxxer from '../assets/client_logos/boxxer.png';
-import Channel4 from '../assets/client_logos/channel_4.jpeg';
+import Channel4 from '../assets/client_logos/channel_4.png';
 import DenOfGeek from '../assets/client_logos/den_of_geek.jpg';
-import GamesRadarPlus from '../assets/client_logos/games_radar_plus.jpeg';
+import GamesRadarPlus from '../assets/client_logos/games_radar_plus.png';
 import LondonActionFestival from '../assets/client_logos/london_action_festival.png';
 import NowThis from '../assets/client_logos/now_this.png';
-import PBS from '../assets/client_logos/pbs.jpeg';
+import PBS from '../assets/client_logos/pbs.png';
 import Remitly from '../assets/client_logos/remitly.png';
 import ViceLandLogoTransparent from '../assets/client_logos/vice-land-logo-png-transparent.png';
 import ViceLandLogo from '../assets/client_logos/vice-land-logo.png';
