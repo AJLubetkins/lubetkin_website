@@ -1,4 +1,4 @@
-id,name,position,quote
-1,John Doe,CEO, Company XYZ,"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-2,Jane Smith,CTO, Company ABC,"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-3,Alice Johnson,Marketing Manager, Company PQR,"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+id,name,position,company,quote
+1,Ruby Coote,Series Editor,Future Studios,"""Alex is a great asset for any video project, not only is he a great editor but he also has a really great editorial eye and knows how to build stories and create narratives without editorial support. He helped us develop and script a brand new gaming show with little or no supervision and he also brings a lot of positivity to any team with his friendly, can-do attitude."""
+2,Chris Longo,Director of Editorial and Partnerships,Den of Geek,"""I’ve worked with Alex for years on various productions, and he’s always been a joy to have around. He is skilled with a camera and as a post production professional, and brings great attention to detail to everything  he does. He also has a keen eye for innovation and offers great professional perspectives and outside-the-box thinking."""
+3,Jack Gould,Creative Director,River North Media,"""Alex is talented, smart, efficient and capable of working across a number of different professional responsibilities. He makes for a great member of any production team."""

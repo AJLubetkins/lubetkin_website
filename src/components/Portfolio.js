@@ -4,18 +4,27 @@ import portfolioItems from './portfolioData'; // Import the JSON or JavaScript d
 
 function Portfolio() {
   // State to manage the standalone video panel
-  const [showVideoPanel, setShowVideoPanel] = useState(false);
-  const [videoPanelUrl, setVideoPanelUrl] = useState('');
+    const [showVideoPanel, setShowVideoPanel] = useState(false);
+    const [videoPanelItem, setVideoPanelItem] = useState('');
 
-  const openVideoPanel = (url) => {
+    let screenWidth = window.screen.width - (.1 * window.screen.width);
+    
+    // Calculate height based on the width (480/854)
+    const heightRatio = 480 / 854;
+    const height = screenWidth * heightRatio;
+    console.log({screenWidth, height})
+
+  const openVideoPanel = (item) => {
     setShowVideoPanel(true);
-    setVideoPanelUrl(url);
+    setVideoPanelItem(item);
   };
 
   const closeVideoPanel = () => {
     setShowVideoPanel(false);
-      setVideoPanelUrl('');
+      setVideoPanelItem(null);
   };
+
+    
 
 /* unused code
 
@@ -37,8 +46,8 @@ function Portfolio() {
     <section className="portfolio" id="portfolio">
 	<div className="portfolio-showreel">
         <iframe
-          width="854"
-          height="480"
+            width={screenWidth}
+            height={height}
             src={`https://player.vimeo.com/video/${portfolioItems[0].url.split('.com/')[1]}`}
           title="Showreel"
           frameBorder="0"
@@ -53,10 +62,10 @@ function Portfolio() {
 	    <div key={item.id} className="portfolio-item">
 		<div
 		    className="video-thumbnail"
-		    onClick={() => openVideoPanel(item.url)}
+		    onClick={() => openVideoPanel(item)}
 		>
 		    <img
-			src={`https://img.youtube.com/vi/${item.url.split('?v=')[1]}/0.jpg`}
+			src={`https://img.youtube.com/vi/${item.url.split('?v=')[1]}/mqdefault.jpg`}
 			alt={item.title}
 		    />
 		    <div className="overlay">
@@ -69,13 +78,18 @@ function Portfolio() {
       {showVideoPanel && (
           // Render the video panel
 	  <div className="video-panel">
-
-              <div className="video-panel-inner">
-		  	      <div dangerouslySetInnerHTML={{ __html: `<iframe width="640" height="360" src="https://www.youtube.com/embed/${videoPanelUrl.split('?v=')[1]}" frameborder="0" allowfullscreen ></iframe>` }} />
-
-            <button onClick={closeVideoPanel}>Close</button>
+	      <div className="video-panel-inner">
+		  <div className="video-container">
+		      <div dangerouslySetInnerHTML={{ __html: `<iframe width="640" height="360" src="https://www.youtube.com/embed/${videoPanelItem.url.split('?v=')[1]}" frameborder="0" allowfullscreen ></iframe>` }} />
+		  </div>
+		  <div className="info-container">
+		      <h2>{videoPanelItem.title}</h2>
+		      <p>{videoPanelItem.description}</p>
+		  </div>
+		  
+		  <button onClick={closeVideoPanel}>Close</button>
+              </div>
           </div>
-        </div>
       )}
     </section>
   );

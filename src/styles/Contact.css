@@ -5,7 +5,7 @@
   text-align: center;
   margin-top: 10vh;
   position: relative;
-  background: #d87b2e;
+  background: navy;
 }
 
 .form-container {
@@ -41,6 +41,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 button {
@@ -51,4 +52,17 @@ button {
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .contact {
+	width: 100%;
+    }
+    
+    .form-container {
+	width: 100%;
+	padding: .5rem;
+	margin: 0;
+    }
 }

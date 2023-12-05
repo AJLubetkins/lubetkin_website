@@ -11,7 +11,8 @@ fs.createReadStream(inputFile)
     portfolioItems.push({
       id: row.id,
       title: row.title,
-      url: row.url,
+	url: row.url,
+	description: row.description,
     });
   })
   .on('end', () => {

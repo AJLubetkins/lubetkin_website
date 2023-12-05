@@ -58,3 +58,27 @@ nav ul li a {
 nav ul li a:hover {
   color: #6f6f6f;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .header {
+	max-width: 100%;
+	padding: 0;
+	justify-content: space-around;
+    }
+
+    .logo h1 {
+	font-size: 1rem;
+    }
+
+    nav ul {
+	margin-right: 0;
+	display: flex;
+	padding-inline-start: 0;
+    }
+
+    nav ul li {
+	margin-right: 10px;
+    }
+}
+

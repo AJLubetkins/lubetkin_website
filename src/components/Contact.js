@@ -19,9 +19,15 @@ function Contact() {
 
   const handleSubmit = (event) => {
       event.preventDefault();
-      console.log('submitting email')
-    // Send email using a server-side component (e.g., Node.js with Nodemailer)
-    // You need to implement server-side email handling here
+      
+      console.log('Opening email client...');
+      
+      const { name, email, subject, message } = formData;
+      const mailtoLink = `mailto:ajlubetkin@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(`${message}`)}`;
+      
+      window.location.href = mailtoLink;
   };
 
   return (

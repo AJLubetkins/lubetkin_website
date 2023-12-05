@@ -15,7 +15,7 @@
   max-width: 50%; /* Adjust the width of the text overlay */
   padding: 20px;
   color: white;
-  background: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity as needed */
+  background: rgb(101 101 101 / 70%); /* Adjust the background color and opacity as needed */
   text-align: left;
   margin-left: 10vw;
   border-radius: 8px;
@@ -32,6 +32,14 @@
 /* Additional styles for responsiveness */
 @media (max-width: 768px) {
   .about-content {
-    max-width: 100%;
+      max-width: 100%;
+      margin: 10px 10px;
+      
+  }
+
+  .about {
+      overflow: auto;
+      margin-top: 10vh;
+      height: fit-content;
   }
 }
