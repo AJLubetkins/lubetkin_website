@@ -29,7 +29,7 @@ const logoImages = [
   PBS,
   Remitly,
   ViceLandLogoTransparent,
-  ViceLandLogo,
+  //ViceLandLogo,
 ];
 
 function Clients() {

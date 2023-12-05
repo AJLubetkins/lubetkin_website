@@ -14,8 +14,12 @@ code {
 
 @media only screen and (max-width: 600px) {
 
+    html,body{
+    overflow-x: hidden;
+}
     section {
-	width: 95%!important;
+	width: 100%!important;
     }
     
 }
+
