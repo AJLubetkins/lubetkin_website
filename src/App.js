@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './App.css'
 import logo from './logo.svg';
 import Header from './components/Header';
 import About from './components/About';
@@ -18,12 +19,14 @@ function App() {
     };
 
     return (
-	<div>
+	<div className="content">
 	    <Header renderPage={renderPage} />
-	    {currentPage === 'home' && <Home />}
-	    {currentPage === 'about' && <About />}
-	    {currentPage === 'contact' && <Contact />}
-	    <Footer />
+	    <div className='container'>
+		 {currentPage === 'home' && <Home />}
+		 {currentPage === 'about' && <About />}
+		 {currentPage === 'contact' && <Contact />}
+		 <Footer />
+	     </div>
 	</div>
     );
 }

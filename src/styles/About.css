@@ -1,19 +1,20 @@
 /* About.css */
 .about {
     position: relative;
-    margin-top: 6vh;
   height: 85vh; /* Adjust the height as needed */
   background: url('../assets/headshot 1.jpg') center/cover no-repeat; /* Replace with your actual image path */
   color: white;
   display: flex;
   align-items: center;
   justify-content: left;
+  oveflow: auto;
 }
 
 .about-content {
-  position: absolute;
-  max-width: 50%; /* Adjust the width of the text overlay */
-  padding: 20px;
+    max-width: 50%; /* Adjust the width of the text overlay */
+    max-height: 95%;
+    overflow: auto;
+  padding: 1rem;
   color: white;
   background: rgb(101 101 101 / 70%); /* Adjust the background color and opacity as needed */
   text-align: left;

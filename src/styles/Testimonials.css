@@ -45,7 +45,11 @@
   background: none; /* Remove default carousel background */
   border: none; /* Remove default carousel border */
   box-shadow: none; /* Remove default carousel box shadow */
+  width: 66%;
+  margin: auto;
+
 }
+
 
 .carousel .control-arrow:hover {
     background-color: navy;

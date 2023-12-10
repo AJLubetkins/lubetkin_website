@@ -12,7 +12,7 @@ function Testimonials() {
           <div key={testimonial.id} className="testimonial">
             <p className="author">{testimonial.name}</p>
               <p className="position">{testimonial.position}</p>
-	      <p className="content">{testimonial.quote}</p>
+	      <p className="testimonal-content">{testimonial.quote}</p>
 
           </div>
         ))}

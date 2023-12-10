@@ -7,7 +7,7 @@ function Portfolio() {
     const [showVideoPanel, setShowVideoPanel] = useState(false);
     const [videoPanelItem, setVideoPanelItem] = useState('');
 
-    let screenWidth = window.screen.width// - (.1 * window.screen.width);
+    let screenWidth = window.screen.width - (.1 * window.screen.width);
     
     // Calculate height based on the width (480/854)
     const heightRatio = 480 / 854;

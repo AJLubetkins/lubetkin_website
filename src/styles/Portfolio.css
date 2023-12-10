@@ -1,6 +1,9 @@
 .portfolio {
   padding: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .portfolio h2 {
@@ -110,14 +113,23 @@
 
     .portfolio {
 	width: 100%;
-	padding: 5rem 0;
+	padding: 1rem 0;
 	text-align: unset;
+    }
+
+    .portfolio-showreel {
+	padding: 0;
+	width: fit-content;
+	margin: auto;
+	margin-bottom: 1rem;
     }
 
     .portfolio-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: .1rem;
+	grid-gap: 0rem;
+	width: 95%;
+	margin: auto;
     }
 
     .video-panel-inner {
@@ -133,6 +145,7 @@
 
     .video-container {
 	width: 100%;
+	margin-top: 2rem;
     }
     
 }

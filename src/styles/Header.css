@@ -1,10 +1,7 @@
 /* Header.css */
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+    width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   z-index: 100; /* Ensure the header stays above other content */
   display: flex;

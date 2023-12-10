@@ -1,9 +1,8 @@
 /* Contact.css */
 
 .contact {
-  padding: 5rem 0;
+  padding: 1rem 0;
   text-align: center;
-  margin-top: 10vh;
   position: relative;
   background: navy;
 }
@@ -58,11 +57,14 @@ button {
 
     .contact {
 	width: 100%;
+	display: flex;
     }
     
     .form-container {
-	width: 100%;
-	padding: .5rem;
-	margin: 0;
+	width: 80%;
+	padding: 0.5rem 0;
+	margin: auto;
+	height: 80%;
+	overflow: auto;
     }
 }
