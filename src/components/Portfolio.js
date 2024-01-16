@@ -24,7 +24,12 @@ function Portfolio() {
       setVideoPanelItem(null);
   };
 
+    const extractVideoId = (url) => {
+	const match = url.match(/[?&]v=([^&]+)/);
+	return match ? match[1] : null;
+    };
     
+    console.log(portfolioItems[3].url.split('?v='))
 
 /* unused code
 
@@ -65,7 +70,7 @@ function Portfolio() {
 		    onClick={() => openVideoPanel(item)}
 		>
 		    <img
-			src={`https://img.youtube.com/vi/${item.url.split('?v=')[1]}/mqdefault.jpg`}
+			src={`https://img.youtube.com/vi/${extractVideoId(item.url)}/mqdefault.jpg`}
 			alt={item.title}
 		    />
 		    <div className="overlay">
@@ -80,7 +85,7 @@ function Portfolio() {
 	  <div className="video-panel">
 	      <div className="video-panel-inner">
 		  <div className="video-container">
-		      <div dangerouslySetInnerHTML={{ __html: `<iframe width="640" height="360" src="https://www.youtube.com/embed/${videoPanelItem.url.split('?v=')[1]}" frameborder="0" allowfullscreen ></iframe>` }} />
+		      <div dangerouslySetInnerHTML={{ __html: `<iframe width="640" height="360" src="https://www.youtube.com/embed/${extractVideoId(videoPanelItem.url)}" frameborder="0" allowfullscreen ></iframe>` }} />
 		  </div>
 		  <div className="info-container">
 		      <h2>{videoPanelItem.title}</h2>

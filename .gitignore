@@ -21,3 +21,11 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Emacs in-progress and backup files
+*~
+\#*\#
+.\#*
+*.swp
+*.swo
+*.swn

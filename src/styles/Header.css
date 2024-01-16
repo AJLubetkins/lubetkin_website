@@ -8,7 +8,7 @@
   justify-content: space-between;
   color: black;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 0;
   background-color: white;
   height: 7vh;
 }
@@ -19,6 +19,7 @@
 }
 
 .logo {
+    margin-left: 1rem;
   display: flex;
   align-items: center;
 }
