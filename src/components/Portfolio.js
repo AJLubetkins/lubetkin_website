@@ -70,7 +70,7 @@ function Portfolio() {
 		    onClick={() => openVideoPanel(item)}
 		>
 		    <img
-			src={`https://img.youtube.com/vi/${extractVideoId(item.url)}/mqdefault.jpg`}
+			src={`https://img.youtube.com/vi/${extractVideoId(item.url)}/hqdefault.jpg`}
 			alt={item.title}
 		    />
 		    <div className="overlay">
