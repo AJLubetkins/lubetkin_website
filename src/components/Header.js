@@ -6,7 +6,7 @@ function Header({ renderPage }) {
   return (
     <header className="header">
       <div className="logo">
-        <h1>Alex Poobetkin</h1>
+        <h1>Alex Lubetkin</h1>
       </div>
       <nav>
           <ul>
